@@ -19,7 +19,9 @@ import MyCustomList from './components/MyCustomList';
 import GridDynamicData from './components/GridDynamicData';
 import GirdStaticData from './components/GirdStaticData';
 import MyScrollView from './components/MyScrollView';
-
+import ComponentLoopWithPropsFlatList from './components/ComponentLoopWithPropsFlatList';
+import MySectionList from './components/MySectionList';
+import MyClassComponent from './components/MyClassComponent';
 
 
 function App(): React.JSX.Element {
@@ -39,9 +41,6 @@ function App(): React.JSX.Element {
             {/* <MyCompanyData/>
             <UserData/>
             <Button title='Submit' onPress={()=>handleChange('hello')} color={'green'} /> */}
-
-
-           
             {/* <SimpleForm/> */}
 
             {/* <MyScrollView/> */}
@@ -49,15 +48,15 @@ function App(): React.JSX.Element {
             {/* <MyFlatList/> */}
 
             {/* <MyCustomList/> */}
-            
+
             {/* <GirdStaticData/> */}
 
             {/* <GridDynamicData/> */}
-          </View>
+            {/* <ComponentLoopWithPropsFlatList/> */}
+            {/* <MySectionList/> */}
+            <MyClassComponent/>
 
-        
-           
-         
+          </View>
   );
 }
 
@@ -66,7 +65,7 @@ const UserData = ()=>{
   return (
            <View>
                <Text style={{fontSize:12}}>Name: Niloy</Text>
-               <Text style={{fontSize:12}}>age: 29</Text>
+               <Text style={{fontSize:12}}>Age: 29</Text>
                <Text style={{fontSize:12}}>Country: Bnagladesh</Text>
            </View>
   );

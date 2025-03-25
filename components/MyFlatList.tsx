@@ -20,15 +20,16 @@ function MyFlatList() {
             id:4,
             name:"Rubel"
         }
-    ]
+    ];
 
       return (
       
             <View>
                  <Text style={{marginTop:10,fontSize:20}}>List with flat list</Text>
-                 <FlatList  data={users} 
+                 <FlatList  data={users}
                  renderItem={({item}) => <Text style={styles.myItem}>{item.name} </Text>}
                  keyExtractor={item => item.id}
+
                   />
            </View>
     
